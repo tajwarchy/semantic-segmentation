@@ -1,0 +1,28 @@
+# Model
+model: deeplabv3plus        # options: deeplabv3plus, unet
+backbone: resnet50           # options: resnet34, resnet50, resnet101
+num_classes: 21              # 20 VOC classes + background
+pretrained_encoder: true
+
+# Data
+dataset: voc
+data_root: data/VOCdevkit
+image_size: 512
+ignore_index: 255
+num_workers: 0               # Keep 0 for M1 — avoids multiprocessing hangs
+
+# Training
+batch_size: 8
+epochs: 50
+learning_rate: 0.001
+weight_decay: 0.0001
+lr_scheduler: cosine         # options: cosine, poly
+
+# Device
+device: mps                  # mps for M1, cuda for GPU, cpu fallback
+
+# Logging & Checkpoints
+log_dir: results/metrics
+checkpoint_dir: weights
+save_best_only: true
+log_every_n_epochs: 5

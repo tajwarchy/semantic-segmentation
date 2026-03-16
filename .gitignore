@@ -1,0 +1,23 @@
+# Data (too large for GitHub)
+data/VOCdevkit/
+data/*.tar
+data/*.zip
+
+# Model weights
+weights/
+
+# Results (add selectively)
+results/predictions/
+results/metrics/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Env
+.env
