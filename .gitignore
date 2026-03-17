@@ -21,3 +21,6 @@ __pycache__/
 
 # Env
 .env
+
+#video
+results/test_video.mp4
