@@ -64,7 +64,7 @@ context from deep layers, giving sharp object boundaries.
 
 ## Installation
 ```bash
-git clone https://github.com/YOUR_USERNAME/semantic-segmentation
+git clone https://github.com/tajwarchy/semantic-segmentation
 cd semantic-segmentation
 
 conda create -n semseg python=3.10 -y
